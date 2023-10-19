@@ -9,7 +9,7 @@
       "stopAtEntry": false,
       "externalConsole": false,
       "cwd": "/home/francesco/eserciziC",
-      "program": "/home/francesco/eserciziC/build/Debug/outDebug",
+      "program": "/home/francesco/eserciziC/a.out",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
