@@ -1,2 +1,0 @@
-# eserciziC
-esercizi linguaggio c
