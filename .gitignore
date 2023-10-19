@@ -1,3 +1,6 @@
+#Cartelle
+/.vscode
+
 # Prerequisites
 *.d
 *.json
