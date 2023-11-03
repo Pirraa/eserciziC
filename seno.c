@@ -46,7 +46,7 @@ int main()
         double fatt; //calcolare il fattoriale di 2n+1
         fatt=fattoriale(2*n+1);
 
-        xn=uno*k/fatt;
+        xn+=uno*k/fatt;
     }
     printf("%lf \n",xn);
 }
