@@ -8,6 +8,11 @@ int rnd_int(int min,int max)
     return min+rand()%(max-min+1);
 }
 
+float rnd_float(int min,int max)
+{
+    return min+(double)rand()/RAND_MAX*(max-min);;
+}
+
 int main()
 {
     srand(time(NULL));
