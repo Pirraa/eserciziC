@@ -6,11 +6,6 @@ typedef char Parola[51];
 
 Parola parole[100000];
 
-void stampa()
-{
-
-}
-
 int main(int argc, char*argv[])
 {
     //./parola_casuale words.italian.txt
