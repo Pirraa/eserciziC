@@ -1,0 +1,32 @@
+quando compilo ci sono due fasi:
+1)compilazione: traduce codice c in codice macchina,
+non contando eventuali librerie con funzioni esterne
+traduce file c in file oggetto .o
+con gcc gcc -g file.c
+2)linking: lega tra loro i file .o creando un file eseguibile
+cioè .exe o .out da richiamare con ./
+con gcc gcc -o nomeEseguibile file1.o file2.o file3.oggetto
+
+devo sempre dichiarare nel main i prototipi delle funzioni 
+poi creo file con il codice delle funzioni 
+prima genero un file .o per ogni file .c e poi li linko tutti assieme 
+per generare un eseguibile
+per compilare ogni funzione deve essere dichiarata(prototipo)
+per linkare ogni funzione deve essere definita(corpo)
+
+il prototipo della funzione lo si mette su un file con estensione .h
+in ogni file che deve usare quella funzione al posto di scrivere il prototipo
+si va ad includere il file .h, come fosse una libreria #include "file.h"
+il preprocessore si occuperà di includera (cpp file.c vedo le librerie incluse)
+
+Makefile: strumento per costruire in automatico l'eseguibile
+indico più target con nomefile: file da cui dipende
+poi metto sotto con tabulazione il comando da eseguire per buildare quel file
+il file eseguibile deve essere il primo, poi metto i file oggetto
+quando lancio il comando make, esegue tutti i comandi al suo interno
+se lancio il comando make target esegue solo il cmando sotto quel target
+
+quando creo un progetto su più file usando un adt: (tipo di dato astratto)
+creo file tipo.h con dichiarazione struct e dichiarazione prototipi metodi
+creo file tipo.c con metodi implementati, richiamando file.h con include
+nel main includo il file .h
