@@ -1,0 +1,3 @@
+questo è il contenuto
+del terzo file
+su 3 righe

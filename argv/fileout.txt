@@ -1,0 +1,6 @@
+questo è il contenuto del primo file in una riga
+questo è i contenuto del secondo file
+su due righe
+questo è il contenuto
+del terzo file
+su 3 righe
