@@ -20,23 +20,6 @@ void listaNonOrdinata(Lista* pl, int n) {
   }
 }
 
-/*int* listaToArray(Lista l,int *dim)
-{
-    int *punt;
-    int lun;
-    int i=0;
-    lun=lunghezza(l);
-    punt=(int*)malloc(sizeof(int)*lun);
-    while(l!=NULL)
-    {
-        punt[i]=l->dato;
-        l=l->next;
-        i++;
-    }
-    *dim=lun;
-    return punt;
-}*/
-
 int* listaToArray(Lista l,int *dim)
 {
     int *punt;
@@ -50,6 +33,20 @@ int* listaToArray(Lista l,int *dim)
     }
     *dim=lun;
     return punt;
+}
+
+int* listToArray(Lista l)
+{
+    int n_elementi=lunghezza(l);
+    int i=0;
+    int *a=(int*)malloc(sizeof(int)*n_elementi);
+    while(l!=NULL)
+    {
+        a[i]=l->dato;
+        l=l->next;
+        i++;
+    }
+    return a;
 }
 
 int lunghezza(Lista l)
