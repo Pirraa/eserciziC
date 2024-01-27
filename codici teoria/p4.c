@@ -24,4 +24,6 @@ int main()
     p=leggi(p);//passaggio per valore
     Persona pp[10];
     assegna(pp);//passaggio per riferimento
+    Persona *p3;
+    p3->età=4;//accesso tramite freccia perchè puntatore a struct
 }
