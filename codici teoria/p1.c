@@ -22,7 +22,7 @@ int main()
     pi2=&l;
     pc2=&n;
 
-    //assegno ad un puntatore a carattere il puntatore ad intero, conterranno lo steso indirizzo, ma il valore referenziato da pc sarà il caratterer corrispondente all'ascii dei primi due interi del valore puntato da pi
+    //assegno ad un puntatore a carattere il puntatore ad intero, conterranno lo steso indirizzo, ma il valore referenziato da pc sarà il caratterer corrispondente all'ascii del primo byte puntato da pi
     pc=(char *)pi;
     //assegno ad un puntatore ad intero il puntatore a carattere, conterranno lo stesso indirizzo, ma il valore referenziato da pi2 sarà il valore ascii del carattere referenziato da pc2
     pi2=(int *)pc2;
